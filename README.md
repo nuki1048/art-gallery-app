@@ -1,3 +1,4 @@
+It's not my build if anything
 # Vite React Starter
 
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)

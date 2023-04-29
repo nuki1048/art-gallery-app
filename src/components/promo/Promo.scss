@@ -1,0 +1,141 @@
+@import '../../styles/base/variables.scss';
+.promo {
+  position: relative;
+
+  min-height: 800px;
+  padding: 189px 163px 0 166px;
+  background: url('../../assets/desktop/image-hero.jpg') center no-repeat;
+  background-size: 540px 800px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
+    width: 33.33%;
+    height: 800px;
+    background-color: $almostBlack;
+    content: '';
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    // position: absolute;
+    // top: 189px;
+    // left: 193px;
+    z-index: 2;
+    color: transparent;
+    font-weight: 900;
+    font-size: 96px;
+    font-style: normal;
+    line-height: 88px;
+    text-align: left;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff 63.6%, #000000 37.3%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  &__info {
+    width: 350px;
+    color: $darkGrey;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 32px;
+    text-align: left;
+  }
+  .margin-right-90 {
+    margin-right: 90px;
+  }
+  .mt-64 {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .promo {
+    background: url('../../assets/desktop/image-hero.jpg') center no-repeat;
+    &::before {
+      width: 36%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    background: url('../../assets/desktop/image-hero.jpg') center no-repeat;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .promo {
+    &::before {
+      display: none;
+    }
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 389px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 145px 40px 0 389px;
+    background-position: left;
+    &__title {
+      position: relative;
+      top: 0;
+      left: 0;
+      color: $almostBlack;
+      font-weight: 900;
+      font-size: 70px;
+      font-style: normal;
+      line-height: 65px;
+    }
+    &__info {
+      margin-top: 48px;
+      font-weight: 300;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 28px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .promo {
+    min-height: 630px;
+
+    padding: 272px 16px 0 16px;
+    background: url('../../assets/mobile/image-hero.jpg') top (center / cover)
+      no-repeat;
+    background-size: 100%;
+    &::before {
+      display: none;
+    }
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      position: relative;
+      top: 0;
+      left: 0;
+      color: $almostBlack;
+      font-weight: 900;
+      font-size: 60px;
+      font-style: normal;
+      line-height: 55px;
+    }
+    &__info {
+      margin-top: 32px;
+      font-weight: 300;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 28px;
+    }
+  }
+}

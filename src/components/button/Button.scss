@@ -1,0 +1,67 @@
+@import '../../styles/base/variables.scss';
+button.button {
+  &__main,
+  &__second {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 72px;
+    color: $white;
+    font-weight: 800;
+    font-size: 19px;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    background: $almostBlack;
+    transition: 0.5s all;
+  }
+  &__main {
+    padding-right: 90px;
+    padding-left: 32px;
+    &:hover {
+      background: $gold;
+      &::after {
+        background-color: $almostBlack;
+      }
+    }
+    &::after {
+      position: absolute;
+      right: 0;
+      display: block;
+      width: 56px;
+      height: 72px;
+      background: url('../../assets/icon-arrow-right.svg') center
+        (center / cover) no-repeat;
+      background-color: $gold;
+      background-size: 8px 24px;
+      transition: 0.5s all;
+      content: '';
+    }
+  }
+  &__second {
+    padding-right: 32px;
+    padding-left: 90px;
+    &:hover {
+      background: $gold;
+      &::before {
+        background-color: $almostBlack;
+      }
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 56px;
+      height: 72px;
+      background: url('../../assets/icon-arrow-left.svg') center
+        (center / cover) no-repeat;
+      background-color: $gold;
+      background-size: 8px 24px;
+      transition: 0.5s all;
+      content: '';
+    }
+  }
+}

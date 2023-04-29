@@ -1,0 +1,139 @@
+@import '../../styles/base/variables.scss';
+.location {
+  .leaflet-container {
+    width: 100%;
+    height: 600px;
+  }
+  &__info {
+    min-height: 548px;
+    padding: 104px 0 128px 0;
+    background: $almostBlack;
+    &_title {
+      color: $white;
+      font-weight: 900;
+      font-size: 70px;
+      font-family: 'Big Shoulders Display';
+      font-style: normal;
+      line-height: 70px;
+      text-transform: uppercase;
+    }
+    &_address {
+      color: $gold;
+      font-weight: 900;
+      font-size: 36px;
+      font-family: 'Big Shoulders Display';
+      font-style: normal;
+      line-height: 36px;
+      text-transform: uppercase;
+    }
+    &_fullAddress {
+      margin-top: 24px;
+      color: $white;
+      font-weight: 300;
+      font-size: 22px;
+      font-family: 'Outfit';
+      font-style: normal;
+      line-height: 32px;
+    }
+    &_text {
+      width: 540px;
+      margin-top: 32px;
+      color: $white;
+      font-weight: 300;
+      font-size: 22px;
+      font-family: 'Outfit';
+      font-style: normal;
+      line-height: 32px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .btn__home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .location {
+    &__info {
+      &_title {
+        font-weight: 900;
+        font-size: 55px;
+        font-style: normal;
+        line-height: 50px;
+        br {
+          display: none;
+        }
+      }
+      &_address {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      &_fullAddress {
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+      }
+      &_text {
+        width: 398px;
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .location {
+    .leaflet-container {
+      height: 550px;
+    }
+    &__info {
+      &_title {
+        font-weight: 900;
+        font-size: 50px;
+        font-style: normal;
+        line-height: 45px;
+        br {
+          display: none;
+        }
+      }
+      &_address {
+        margin-top: 48px;
+        font-weight: 900;
+        font-size: 32px;
+        font-style: normal;
+        line-height: 32px;
+      }
+      &_fullAddress {
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+      }
+      &_text {
+        width: 343px;
+        font-weight: 300;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 28px;
+      }
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}

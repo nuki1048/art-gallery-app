@@ -6,7 +6,12 @@ module.exports = {
     './src/index.html'
   ],
   theme: {
-    extend: {}
+    container: {
+      screens: {
+        'xl': '680px',
+        '2xl': '1100px'
+      }
+    }
   },
   plugins: []
 };

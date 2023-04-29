@@ -1,13 +1,9 @@
 {
   "plugins": ["stylelint-scss", "@namics/stylelint-bem"],
-  "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-idiomatic-order",
-    "stylelint-config-prettier-scss"
-  ],
+  "extends": [],
   "rules": {
-  "font-family-name-quotes": null,
-   "plugin/stylelint-bem-namics": {
+    "font-family-name-quotes": null,
+    "plugin/stylelint-bem-namics": {
       "patternPrefixes": [],
       "helperPrefixes": []
     },
@@ -18,7 +14,6 @@
       }
     ],
     "selector-class-pattern": null
-
   },
   "overrides": [
     {

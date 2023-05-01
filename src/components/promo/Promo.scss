@@ -27,14 +27,14 @@
     // top: 189px;
     // left: 193px;
     z-index: 2;
-    color: transparent;
+    color: $white;
     font-weight: 900;
     font-size: 96px;
     font-style: normal;
     line-height: 88px;
     text-align: left;
     text-transform: uppercase;
-    background: linear-gradient(to right, #ffffff 63.6%, #000000 37.3%);
+    mix-blend-mode: difference;
     -webkit-background-clip: text;
     background-clip: text;
   }
